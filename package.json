@@ -17,6 +17,10 @@
     "json-rpc",
     "json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peengo/bitcoin-rpc-async.git"
+  },
   "author": "peengo",
   "license": "MIT",
   "dependencies": {
