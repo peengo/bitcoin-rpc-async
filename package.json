@@ -1,7 +1,7 @@
 {
   "name": "bitcoin-rpc-async",
-  "version": "1.0.2",
-  "description": "An async RPC wrapper that communicates with the Bitcoin Daemon (bitcoind) and others that follow its standard.",
+  "version": "1.0.3",
+  "description": "A node.js async RPC library that communicates with the Bitcoin (bitcoind) Daemon and others that follow its standard.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",

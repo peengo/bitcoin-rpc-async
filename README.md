@@ -1,6 +1,6 @@
 # bitcoin-rpc-async
 
-An async RPC wrapper that communicates with the Bitcoin Daemon (bitcoind) and others that follow its standard. Run methods as a Promise or inside async/await. 
+A node.js async RPC library that communicates with the Bitcoin (bitcoind) Daemon and others that follow its standard. Run methods as a Promise or inside async/await. 
 
 I wrote this wrapper because most others use callbacks and have none or poor error handling. 
 
@@ -16,7 +16,7 @@ npm install --save bitcoin-rpc-async
 
 ## Usage
 
-The object constructor `new` takes 3 arguments:
+The object constructor takes 3 arguments:
 * `url` (required) \<string> | rpc url string endpoint
 
 * `methods` *(optional)* \<Array> | Array of \<string> method names that will be linked to direct functions on the object (for easier access)
