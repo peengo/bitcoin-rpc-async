@@ -23,7 +23,7 @@ The object constructor `new` takes 3 arguments:
 
 * `naming` *(optional)* \<string> | naming convention for methods we provided as the second argument under `methods`. Eaither `'camelCase'` or `'underscore'`
 
-**Simple example with a Promise:**
+**Simple example using a Promise:**
 ```js
 const Rpc = require('bitcoin-rpc-async');
 
@@ -35,12 +35,14 @@ rpc.run('getblockhash', [0]).then(data => console.log(data));
 Methods take parameters in an \<Array>.  
 Methods don't return the data directly instead they return an `object` of a `result`, `error` and `id`.
 
+You want to use camelCase or underscore naming convention. I've got you covered.
+
 **camelCase naming convention with async/await and destructuring assignment:**
 ```js
 const rpc = new Rpc(
     'http://user:password@localhost:8332',
     ['getBlockHash', 'getBlock'],
-    'underscore'
+    'camelCase'
 );
 
 (async () => {
