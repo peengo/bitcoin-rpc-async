@@ -1,0 +1,1 @@
+module.exports = require('./lib/bitcoin-rpc-async');
